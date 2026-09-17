@@ -1,0 +1,119 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Growth Analyzer Policies</title>
+<style>
+:root{
+  --bg:#faf9f7; --surface:#ffffff; --border:#e4e0d8;
+  --text:#1c1a16; --text-dim:#6b665a; --accent:#a45c2e; --accent-bg:#f3e6da;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16140f; --surface:#1f1c15; --border:#332e22;
+    --text:#f2efe8; --text-dim:#a89f8d; --accent:#e0895a; --accent-bg:#3a2a1c;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16140f; --surface:#1f1c15; --border:#332e22;
+  --text:#f2efe8; --text-dim:#a89f8d; --accent:#e0895a; --accent-bg:#3a2a1c;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--text); margin:0;
+  font-family:'Source Serif 4', Georgia, serif;
+  padding-inline:20px; padding-block:48px;
+}
+.wrap{max-width:680px; margin:0 auto}
+h1{font-family:'Inter', system-ui, sans-serif; font-size:1.9rem; font-weight:700; letter-spacing:-0.01em; margin:0 0 6px}
+.sub{font-family:'Inter', system-ui, sans-serif; color:var(--text-dim); font-size:0.92rem; margin:0 0 36px}
+nav{display:flex; gap:10px; margin-bottom:40px; font-family:'Inter', system-ui, sans-serif}
+nav a{
+  font-size:0.85rem; padding:7px 14px; border-radius:999px; text-decoration:none;
+  color:var(--accent); background:var(--accent-bg); border:1px solid transparent;
+}
+section{margin-bottom:56px}
+section h2{
+  font-family:'Inter', system-ui, sans-serif; font-size:1.25rem; font-weight:700;
+  border-bottom:1px solid var(--border); padding-bottom:10px; margin:0 0 20px;
+  scroll-margin-top:20px;
+}
+h3{font-family:'Inter', system-ui, sans-serif; font-size:1rem; font-weight:600; margin:24px 0 8px}
+p{line-height:1.65; margin:0 0 14px; color:var(--text)}
+ul{margin:0 0 14px; padding-left:22px; line-height:1.65}
+li{margin-bottom:6px}
+.meta{font-family:'Inter', system-ui, sans-serif; color:var(--text-dim); font-size:0.82rem}
+a.link{color:var(--accent)}
+footer{font-family:'Inter', system-ui, sans-serif; color:var(--text-dim); font-size:0.82rem; border-top:1px solid var(--border); padding-top:20px; margin-top:40px}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<div class="wrap">
+  <h1>Growth Analyzer</h1>
+  <p class="sub">Instagram comment &amp; DM automation tool — operated by Rahul Yaduvanshi</p>
+
+  <nav>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Service</a>
+  </nav>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="meta">Last updated: September 2026</p>
+
+    <p>Growth Analyzer ("the app") is a self-operated automation tool that connects to the Instagram Graph API on behalf of the Instagram Business/Creator accounts its operator manages. This page describes what data it accesses and how that data is used.</p>
+
+    <h3>What data we access</h3>
+    <ul>
+      <li>Basic profile info (username, account ID, follower/media counts) for the connected Instagram account(s).</li>
+      <li>Post/Reel metadata (captions, timestamps, media type, permalinks) and engagement insights (reach, likes, comments count, watch time) for the connected account's own content.</li>
+      <li>Public comments left on the connected account's own posts, including the commenter's username and comment text, for the purpose of detecting keyword triggers and replying.</li>
+    </ul>
+
+    <h3>How we use it</h3>
+    <ul>
+      <li>To automatically reply (publicly and/or via Direct Message) to comments on the connected account's own posts that contain specific trigger keywords, sending the commenter requested content (e.g. a tutorial link).</li>
+      <li>To generate engagement/performance summaries for the connected account's own content.</li>
+    </ul>
+
+    <h3>What we don't do</h3>
+    <ul>
+      <li>We do not sell, share, or transfer any Instagram data to third parties.</li>
+      <li>We do not access data belonging to accounts other than the ones the operator has explicitly connected and authorized via Meta's OAuth flow.</li>
+      <li>We do not use this data for advertising or profiling.</li>
+    </ul>
+
+    <h3>Storage &amp; retention</h3>
+    <p>Access tokens and a local log of comments already replied to are stored only on infrastructure controlled by the operator. Data is retained only as long as needed to prevent duplicate replies and is not retained indefinitely.</p>
+
+    <h3>Your rights</h3>
+    <p>Any Instagram user can revoke this app's access at any time via Instagram Settings → Apps and Websites, or Meta Business Suite → Integrations → Connected Apps.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy: <a class="link" href="mailto:rahul1269227@gmail.com">rahul1269227@gmail.com</a></p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p class="meta">Last updated: September 2026</p>
+
+    <h3>What this app does</h3>
+    <p>Growth Analyzer connects to Instagram Business/Creator accounts via the official Instagram Graph API to automatically reply to comments matching configured keywords, send corresponding content via Direct Message, and generate performance summaries — for accounts the operator directly manages.</p>
+
+    <h3>Acceptable use</h3>
+    <ul>
+      <li>This app is intended for use by its operator on accounts they own or are explicitly authorized to manage.</li>
+      <li>Automated replies are limited to the operator's own audience commenting on the operator's own content — never unsolicited outreach to unrelated accounts.</li>
+      <li>Use of this app must comply with Instagram's Platform Policy and Community Guidelines at all times.</li>
+    </ul>
+
+    <h3>No warranty</h3>
+    <p>This app is provided as-is, without warranty of any kind. The operator is not liable for any interruption of service, API changes by Meta, or loss of access resulting from Instagram/Meta platform decisions.</p>
+
+    <h3>Changes</h3>
+    <p>These terms may be updated as the app's functionality changes. Continued use after an update constitutes acceptance of the revised terms.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about these terms: <a class="link" href="mailto:rahul1269227@gmail.com">rahul1269227@gmail.com</a></p>
+  </section>
+
+  <footer>Growth Analyzer — operated by Rahul Yaduvanshi.</footer>
+</div>
+</html>
